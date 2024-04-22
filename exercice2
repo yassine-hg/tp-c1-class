@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int n;
+    do
+    {
+        printf("Donner un entier positif >\n");
+        scanf("%d", &n);
+        printf(" Vous avez fourni l'entier : %d\n" , n);
+    }while(n <= 0);
+
+    printf("Reponse correct \n");
+
+
+    return 0;
+
+}
