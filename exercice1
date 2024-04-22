@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int n;
+    int somme;
+    somme = 0;
+    while(somme < 100){
+        printf("Entrer un nombre : ");
+        scanf("%d" , &n);
+        somme = somme + n;
+    }
+    printf("\n Somme obtenue : %d" , somme);
+
+    return 0;
+
+}
