@@ -1,0 +1,30 @@
+int main() {
+    int num;
+    int max, min;
+
+    printf("Enter a series of integers (enter 0 to stop): ");
+    scanf("%d", &num);
+
+    max = min = num;
+
+    while(num != 0) {
+        printf("Enter a series of integers (enter 0 to stop): ");
+        scanf("%d", &num);
+
+        if (num == 0) {
+            break;
+        }
+
+        if (num > max) {
+            max = num;
+        }
+        if (num < min) {
+            min = num;
+        }
+    }
+
+    printf("Maximum: %d\n", max);
+    printf("Minimum: %d\n", min);
+
+    return 0;
+}
